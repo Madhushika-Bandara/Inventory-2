@@ -1,6 +1,6 @@
 const{Schema, model}=require("mongoose");
 
-const ItemSchema = new Schema(
+const UpadateItemSchema = new Schema(
     {
         name:{
             type: String,
@@ -17,5 +17,5 @@ const ItemSchema = new Schema(
 );
 
 //export model
-const Item = model("Item", ItemSchema);
-module.exports = Item;
+const UpdatedItem = model("UpdatedItem", ItemSchema);
+module.exports = UpdatedItem;
