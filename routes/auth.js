@@ -49,7 +49,20 @@ router.post("/add",async(req,res)=> {
         console.log(err);
         res.status(500).send(err.message);
     }
-}
-)
+});
+
+// // @route   GET /api/auth/add
+// // @desc    view a item
+// // @access  Public
+// router.get("/add", async(req,res) =>{
+//     try{
+//         const existingItem = savedItem({
+//             name:req.name,
+//             quantity: req.quantity,
+//         }) ;
+//     }catch(err) {
+//         console.log(err);
+//         return res.status(500).send(err.message);
+// });
     
 module.exports =  router;
